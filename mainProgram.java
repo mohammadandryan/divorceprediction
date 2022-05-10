@@ -14,10 +14,10 @@ public class mainProgram {
         // prediksi1.prediksibersyarat();
         // prediksi1.prediksinaivebayes();
         // prediksi1.prediksibayes();
-        // probabilitas1.deskripsiProb(prediksi1.getKelas());
+        probabilitas1.deskripsiProb(prediksi1.getKelas());
         probabilitas1.getBayes();
         // probabilitas1.printBayes();
-        probabilitas1.printHasilUji();
+        // probabilitas1.printHasilUji();
         
         prediksi1.footer();
     }

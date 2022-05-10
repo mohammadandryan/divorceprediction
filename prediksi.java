@@ -46,6 +46,12 @@ public class prediksi extends Probabilitas {
         this.j2 = inputan.nextInt();
         return this.j2;
     }
+    public void setJ1(int j1) {
+        this.j1 = j1;
+    }
+    public void setJ2(int j2) {
+        this.j2 = j2;
+    }
 
     public void logic() {
         // LOGIC UNTUK ATRIBUT 1
@@ -247,6 +253,20 @@ public class prediksi extends Probabilitas {
         System.out.println("HASIL PREDIKSI BAYES");
         System.out.println("POTENSI LANGGENG : " + (rb1) + "%");
         System.out.println("POTENSI CERAI : " + (rb2) + "%");
+    }
+
+    public String hasilaplikasi(){
+        String hasil = "";
+        // rb1 = rb1 * 100;
+        // rb2 = rb2 * 100;
+        int irb1 = (int) rb1;
+        int irb2 = (int) rb2;
+        if (rb1>rb2){
+            hasil = "LANGGENG " + "( Probabilitas = " + kelas + ")";
+        } else{
+            hasil = "CERAI " + " (Probabilitas = " + kelas + ")";
+        }
+        return hasil;
     }
 
     public int getKelas() {

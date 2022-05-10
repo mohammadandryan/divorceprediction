@@ -60,7 +60,7 @@ public class Probabilitas extends Data {
 
     }
 
-    public double getKelas(int x) {
+    public int getKelas(int x) {
         Probabilitas prob = new Probabilitas();
         if (prob.getBayesL(x) > prob.getBayesC(x)) {
             return 1;
@@ -69,6 +69,8 @@ public class Probabilitas extends Data {
         }
 
     }
+
+    
 
     public void deskripsiProb(int x) {
         Probabilitas prob = new Probabilitas();
